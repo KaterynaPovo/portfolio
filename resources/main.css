@@ -1,0 +1,212 @@
+#bootstrap-overrides {
+    font-family: Roboto, serif;
+}
+
+
+header {
+    background-image: url(../resources/images/photo_2021-05-15_19-08-40.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.home-text h1 {
+    font-size: 68px;
+    }
+
+.home-text {
+    padding-top: 150px;
+}
+
+.btn {
+    font-size: 24px;
+    margin: 24px;
+}
+   
+
+/* About me part*/
+
+#about-me {
+    background-color: #B9B9B9;
+    margin: 0;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.my-photo {
+    position: relative;
+  }
+
+.my-photo img {
+    margin-top: 65px;
+    left: 10px;
+    margin-left: 65px;
+    position: absolute;
+}
+
+.my-photo h3 {
+    padding: 20px;
+    font-size: 24px;
+    float: right;
+    margin-bottom: 50px;
+    top: 400px;
+    left: 240px;
+    opacity: 0.9;
+    position: absolute;
+}
+
+.my-text {
+    font-size: 28px;
+    margin: 24px;
+    padding: 24px;
+    font-family: Roboto;
+    float: left;
+}
+
+.my-text h1 {
+    margin: 12px;
+}
+
+
+/*Skills part*/
+
+#skills {
+    margin-bottom: 64px;
+}
+
+.progress {
+    margin: 8px;
+    width: 600px;
+    height: 30px;
+}
+
+#bootstrap-overrides .row {
+    margin: 0;
+}
+
+#skills h3 {
+    font-size: 24px;
+    margin: 6px;
+    text-shadow: 1px 1px;
+}
+
+#skills ul {
+    list-style: square;
+    font-size: 18px;
+    margin: 8px;
+    list-style-image: url;
+    line-height: 1.9;
+  }
+
+  /*Contact part*/
+
+  #contact {
+      background-color: black;
+      opacity: 0.9;
+  }
+
+    .contact1 {
+      font-size: 18px;
+      color: white;
+      padding: 16px;
+  }
+
+  .contact1 img {
+      margin-left: 100px;
+  }
+
+  .contact1 p {
+    font-size: 26px;
+    text-shadow: 1px 1px;
+    margin-bottom: 18px;
+    text-decoration: underline;
+  }
+
+  .contactme{
+      width: 500px;
+      padding: 16px;
+     
+  }
+
+  .contactme button {
+    border-radius: 20px;
+    width: 150px;
+    background-color: #B9B9B9;
+    margin: auto;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    transition-duration: 0.4s;
+  }
+
+  .contactme button:hover {
+    background-color:black;
+    color: white;
+  }
+    
+
+  .contact2 img {
+      margin: 16px;
+      width: 50px;
+  }
+
+  #facebook {
+      float: right;
+  }
+ 
+  /*Footer part*/
+
+  footer {
+      background-color: black;
+      color: white;
+      height: 24px;
+      opacity: 0.9;
+      padding-bottom: 106px;
+  }
+
+  .copyright {
+      font-size: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    .btn {
+        display: none;
+    }
+
+    .my-photo img {
+        position: static;
+        margin-top: 25px;
+    }
+
+    .my-text {
+        margin: 16px;
+        font-size: 20px;
+    }
+
+    #skills {
+        margin-bottom: 32px;
+    }
+
+    .progress {
+        width: 400px;
+    }
+
+    .contact1 img {
+        display: none;
+    }
+
+    .contact1 p {
+        font-size: 16px;
+        text-shadow: none;
+    }
+
+    .contact1 a {
+        font-size: 12px;
+    }
+
+  }

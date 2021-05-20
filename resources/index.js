@@ -1,0 +1,2 @@
+drawText('hello');
+bounceBubbles();
