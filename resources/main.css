@@ -23,6 +23,10 @@ header {
     font-size: 24px;
     margin: 24px;
 }
+
+.dropdown {
+    display: none;
+}
    
 
 /* About me part*/
@@ -230,7 +234,6 @@ header {
   @media screen and (max-width: 535px) {
     .my-photo img {
         position: inherit;
-        width: auto;
     } 
 
     .my-photo h3 {
@@ -238,3 +241,20 @@ header {
         position: initial;
     }
   }
+
+  @media screen and (max-width: 400px) {
+      .dropdown {
+          display: inline;
+          
+      }
+
+      .dropdown .btn {
+        display: inline;
+        width: auto;
+        height: auto;
+        margin: 0;
+      }
+    
+      .nav-item {
+          display: none;
+      }
