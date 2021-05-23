@@ -1,7 +1,6 @@
 #bootstrap-overrides {
-    font-family: Roboto, serif;
+    font-family: 'Newsreader', serif;
 }
-
 
 header {
     background-image: url(../resources/images/photo_2021-05-15_19-08-40.jpg);
@@ -9,21 +8,284 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+    position: relative;
+}
 
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
 }
 
 .home-text h1 {
     font-size: 68px;
     }
 
-.home-text {
-    padding-top: 150px;
+/* About me part*/
+
+#about-me {
+    background-color: #E0E0E0;
+    margin: 0;
+    width: auto;
+}
+
+.my-text {
+    font-size: 28px;
+    margin: 24px;
+    padding: 24px;
+    font-family: Roboto;
+    float: left;
+}
+
+.my-text h1 {
+    margin: 12px;
 }
 
 .btn {
     font-size: 24px;
     margin: 24px;
 }
+
+/*Skills part*/
+
+#skills {
+    margin-bottom: 64px;
+}
+
+.progress {
+    margin: 8px;
+    width: 600px;
+    height: 30px;
+}
+
+#bootstrap-overrides .row {
+    margin: 0;
+}
+
+#skills h3 {
+    font-size: 24px;
+    margin: 16px;
+    
+}
+
+#skills ul {
+    list-style: square;
+    font-size: 18px;
+    margin: 8px;
+    line-height: 1.9;
+  }
+
+  #skills img {
+      width: 50px;
+  }
+  /*Contact part*/
+
+#contact {
+    background-color: #100C08;
+    opacity: 0.9;
+}
+
+.contact1 {
+    font-size: 18px;
+    color: white;
+    padding: 16px;
+}
+
+.contact1 p {
+    font-size: 26px;
+    margin-bottom: 18px;
+    text-decoration: underline;
+  }
+
+  .social-links {
+      text-align: center;
+  }
+
+  #facebook img {
+      width: 50px;
+}
+
+.contact1 img {
+    width: 150px;
+}
+
+.email, .phone {
+    display: inline-block;
+}
+
+.email img, .phone img {
+    width: 50px;
+} 
+
+  .contact2 {
+    text-align: center;
+  }
+
+  .contactme{
+    width: 480px;
+    padding: 16px;
+    display: inline-block;
+}
+
+.contactme button {
+    border-radius: 20px;
+    width: 150px;
+    background-color: #B9B9B9;
+    margin: auto;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    transition-duration: 0.4s;
+  }
+
+  .contactme button:hover {
+    background-color:black;
+    color: white;
+  }
+
+/*Footer part*/ 
+
+  footer {
+      background-color:  #100C08;
+      color: white;
+      height: 24px;
+      opacity: 0.9;
+      padding-bottom: 106px;
+  }
+
+  .copyright {
+      font-size: 16px;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    
+.container .btn {
+    display: none;
+}
+
+.nav-item {
+    display: none;
+}
+
+
+.dropdown {
+    display: inline;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: blue;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .btn {
+    display: inline;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+    .my-photo {
+        text-align: center;
+    }
+
+    .my-photo img {
+        width: inherit;
+        margin-top: 32px;
+    }
+
+    .my-photo h3 {
+        padding: 18px;
+        font-size: 20px;
+        width: 190px;
+        margin: 0;
+    }
+
+    .my-text {
+        margin: 0;
+    }
+
+    #skills img {
+        margin-top: 20px;
+    }
+
+    .progress {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .progress a {
+        font-size: 12px;
+    }
+
+    
+
+    .contact1 .contactlogo {
+        display: none;
+    }
+
+    .contact1 a {
+        font-size: 16px;
+    }
+
+    .email, .phone {
+        margin: 10px;
+    }
+
+    .contactme {
+        width: auto;
+    } 
+
+  }
+    
+
+
+/*
+#bootstrap-overrides {
+    font-family: Roboto, serif;
+}
+
+
+
 
 .dropdown {
     display: none;
@@ -34,12 +296,10 @@ header {
 }
    
 
-/* About me part*/
+/* About me part*/ /*
 
 #about-me {
-    background-color: #B9B9B9;
-    margin: 0;
-    width: auto;
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,93 +328,13 @@ header {
     position: absolute;
 }
 
-.my-text {
-    font-size: 28px;
-    margin: 24px;
-    padding: 24px;
-    font-family: Roboto;
-    float: left;
-}
-
-.my-text h1 {
-    margin: 12px;
-}
 
 
-/*Skills part*/
+  /*Contact part*/  /*
 
-#skills {
-    margin-bottom: 64px;
-}
-
-.progress {
-    margin: 8px;
-    width: 600px;
-    height: 30px;
-}
-
-#bootstrap-overrides .row {
-    margin: 0;
-}
-
-#skills h3 {
-    font-size: 24px;
-    margin: 6px;
-    text-shadow: 1px 1px;
-}
-
-#skills ul {
-    list-style: square;
-    font-size: 18px;
-    margin: 8px;
-    list-style-image: url;
-    line-height: 1.9;
-  }
-
-  /*Contact part*/
-
-  #contact {
-      background-color: black;
-      opacity: 0.9;
-  }
-
-    .contact1 {
-      font-size: 18px;
-      color: white;
-      padding: 16px;
-  }
 
   .contact1 img {
       margin-left: 100px;
-  }
-
-  .contact1 p {
-    font-size: 26px;
-    text-shadow: 1px 1px;
-    margin-bottom: 18px;
-    text-decoration: underline;
-  }
-
-  .contactme{
-      width: 500px;
-      padding: 16px;
-     
-  }
-
-  .contactme button {
-    border-radius: 20px;
-    width: 150px;
-    background-color: #B9B9B9;
-    margin: auto;
-    font-size: 22px;
-    text-align: center;
-    color: black;
-    transition-duration: 0.4s;
-  }
-
-  .contactme button:hover {
-    background-color:black;
-    color: white;
   }
     
 
@@ -163,23 +343,7 @@ header {
       width: 50px;
   }
 
-  #facebook {
-      float: right;
-  }
- 
-  /*Footer part*/
 
-  footer {
-      background-color: black;
-      color: white;
-      height: 24px;
-      opacity: 0.9;
-      padding-bottom: 106px;
-  }
-
-  .copyright {
-      font-size: 16px;
-  }
 
   @media screen and (max-width: 1350px) {
       .progress {
@@ -194,9 +358,7 @@ header {
 
   @media screen and (max-width: 768px) {
     
-    .container .btn {
-        display: none;
-    }
+    
 
     .my-photo img {
         position: static;
@@ -217,9 +379,7 @@ header {
         width: inherit;
     }
 
-    .contact1 img {
-        display: none;
-    }
+    
 
     .contact1 p {
         font-size: 16px;
@@ -250,49 +410,7 @@ header {
   @media screen and (max-width: 400px) {
     
     
-    .dropdown {
-        display: inline;
-    }
-
-    .dropbtn {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-    li a:hover, .dropdown:hover .dropbtn {
-        background-color: red;
-    }
-
-    li.dropdown {
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-    .dropdown-content a:hover {
-        background-color: #f1f1f1;
-    }
-      
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
+    
 
 
 /*
@@ -302,8 +420,7 @@ header {
         height: auto;
         margin: 0;
       }
-    */
-      .nav-item {
-          display: none;
-      }
+    
+      
     }
+*/
