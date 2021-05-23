@@ -114,6 +114,15 @@ header {
 
 .email, .phone {
     display: inline-block;
+    position: relative;
+}
+
+.email a, .phone a {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 16px;
 }
 
 .email img, .phone img {
@@ -158,6 +167,7 @@ header {
 
   .copyright {
       font-size: 16px;
+      margin: 16px;
   }
 
 
@@ -171,7 +181,6 @@ header {
     display: none;
 }
 
-
 .dropdown {
     display: inline;
 }
@@ -180,13 +189,12 @@ header {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 30px;
+    padding: 14px 25px;
     text-decoration: none;
-    
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: blue;
+    background-color: rgb(4, 4, 12);
 }
 
 li.dropdown {
@@ -224,28 +232,32 @@ li.dropdown {
     margin: 0;
   }
 
-    .my-photo {
-        text-align: center;
-    }
+.my-photo {     
+    text-align: center;
+}
 
-    .my-photo img {
-        width: inherit;
-        margin-top: 32px;
-    }
+.my-photo img {
+    width: inherit;
+    margin-top: 42px;
+}
 
-    .my-photo h3 {
-        padding: 18px;
-        font-size: 20px;
-        width: 190px;
-        margin: 0;
-    }
+.my-photo h3 {
+    padding: 18px;
+    font-size: 20px;
+    width: 190px;
+     margin: 0;
+}
 
-    .my-text {
-        margin: 0;
-    }
+.my-text {
+    margin: 0;
+}
 
     #skills img {
         margin-top: 20px;
+    }
+
+     #skills h1 {
+        margin-top: 32px;
     }
 
     .progress {
@@ -257,8 +269,6 @@ li.dropdown {
         font-size: 12px;
     }
 
-    
-
     .contact1 .contactlogo {
         display: none;
     }
@@ -269,6 +279,7 @@ li.dropdown {
 
     .email, .phone {
         margin: 10px;
+        flex: none;
     }
 
     .contactme {
